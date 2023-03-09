@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js" ></script>
+    <title>Assignment 1</title>
+</head>
+<body>
+    <div id="root"></div>
+    <script type="text/babel" >
+        var card = <div style={{
+            width:"400px",
+            textAlign:"center",
+            padding:"20px",
+            marginLeft:"30px",
+            boxShadow:"0px 0px 10px black"
+        }}>
+            <img
+            width="300px"
+            height="200px"
+             src="https://media.istockphoto.com/id/1344688156/photo/portrait-of-a-man-using-a-computer-in-a-modern-office.jpg?s=1024x1024&w=is&k=20&c=-XX4lMNCemxXFMcM35vPRsDX8jewifdOzwUzZ4ziXno=" />
+            <h2>Shivam Kumar</h2>
+            <p>Software developer</p>
+            <p style={{color:"red", marginRight:"20px",fontSize:"20px"}}>
+                Post<span style={{color:"blue",marginLeft:"10px"}}>90</span>  Following <span style={{color:"blue",marginLeft:"10px"}}>890</span>  Followers <span style={{color:"blue",marginLeft:"10px"}}>910</span></p>
+            </div>
+
+        ReactDOM.render(<div style={{display:"flex", justifyContent:"center" }}>{card}</div>,document.getElementById('root'));
+    </script>
+</body>
+</html>
